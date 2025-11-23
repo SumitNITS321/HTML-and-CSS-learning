@@ -1,0 +1,193 @@
+/*following body works wit first 4 divs only, with rest everything absent*/
+/* body{            
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+} */
+div{
+    height: 192px;
+    width: 192px;
+    background-color: lightblue;
+    display: inline-block;
+}
+div:hover{
+    background-color:rgba(105, 118, 82, 0.75);
+    text-align: right;
+}
+div:active{
+    background-color:cadetblue;
+    text-align: center;
+}
+#div2{
+    height: 192px;
+    width: 192px;
+    background-color:burlywood;
+    transition-property: all;
+    transition-duration: 2s;
+}
+#div2:hover{
+    background-color:rgba(148, 108, 6, 0.75);
+    text-align: right;
+}
+#div2:active{
+    background-color:darksalmon;
+    text-align: center;
+}
+#div3{
+    height: 96px;
+    width: 96px;
+    text-align: right;
+    font-size: 0.75rem;
+    background-color:rgba(125, 3, 177, 0.75);
+    transition-property: all;
+    transition-timing-function: steps(3);/*ease-in,ease-out,steps,step-end*/
+    transition-duration: 2s;
+    transition-delay: 1s;
+}
+#div3:hover{
+    height: 192px;
+    width: 192px;
+    text-align: left;
+    font-size:1rem;
+    background-color: rgba(86, 17, 150, 0.75);
+}
+#div4{
+    height:192px;
+    width: 192px;
+    background-color: rgba(15, 10, 10, 0.5);
+    transition: all 4s 2s ease-in;
+}
+#div4:hover{
+    height:0;
+    width:0;
+    font-size:0;
+}
+.divclass{
+    height:192px;
+    width:192px;
+    background-color: rgba(255,0,0,0.5);
+    position: relative;
+}
+.divclass:hover{
+    background-color: rgba(255,0,0,0.5);
+    text-align: left;
+}
+#a:hover{
+    rotate: x 90deg;
+    transition-duration: 1s;
+}
+#b:hover{
+    rotate: y 90deg;
+    transition-duration: 1s;
+}
+#c:hover{
+    rotate: z 90deg;
+    transition-duration: 300ms;
+}
+#d:hover{
+    rotate: z 45deg;
+    transition-duration: 400ms;
+}
+.divclass2{
+    height:192px;
+    width:192px;
+    background-color: rgba(0,0,255,0.5);
+    position: relative;
+}
+.divclass2:hover{
+    background-color: rgba(0,0,255,0.5);
+    text-align: left;
+}
+#e:hover{
+    rotate: 45deg;
+    transform: scale(0.707);
+    transition-duration: 500ms;
+}
+#f:hover{
+    border-radius: 50%;
+    transition-duration: 600ms;
+}
+#g:hover{
+    transform: scale(0.5);
+    transition-duration: 600ms;
+    font-size: 2rem;
+}
+.divclass3{
+    height:192px;
+    width:192px;
+    background-color: rgba(0,255,0,0.5);
+    position: relative;
+    transition-property: all;
+}
+#h:hover{
+    transform: scale(2);
+    transition-duration: 500ms;
+}
+.divclass3:hover{
+    background-color: rgba(0,255,0,0.5);
+    text-align: left;
+}
+#i:hover{
+    transform: rotate(180deg);
+    transition-duration: 400ms;
+    transform: translate(96px,-96px);
+}
+@keyframes myAnime {
+    from{background-color: rgba(0,255,0,0.5);}
+    to{background-color: rgba(1, 50, 1, 0.5);}
+}
+@keyframes Anime2{
+    from{bottom: 0px;}
+    to{bottom: 96px;
+    }
+}
+
+#j:hover{
+    animation-name: myAnime;
+    animation-duration: 300ms;
+    animation-timing-function: steps(3);
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+#k:hover{
+    animation-name: Anime2;
+    animation-duration: 2s;
+    animation-delay: 200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes Anime3 {
+    0%{background-color: rgba(0,255,0,0.5);}
+    50%{background-color: blue;
+        font-size: 2em;
+        text-align: center;}
+    100%{background-color: darkblue;
+         text-align: end;}
+    
+}
+#l:hover{
+    animation-name: Anime3;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+@keyframes spinanime {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+#loader{
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    background-color: white;
+    position:absolute;
+    right: 200px;
+    top: 480px;
+    border: 6px dotted rgb(66, 66, 144, 0.75);
+    border-top: 6px dotted rgb(80, 118, 188, 0.75);
+    animation: spinanime 3s 0s infinite;
+    animation-timing-function:linear ;
+}

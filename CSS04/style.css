@@ -1,0 +1,177 @@
+body{
+    text-align: center;
+}
+div{
+    height: 96px;
+    width: 96px;
+    display: inline-block;
+    border: 2px outset black;
+}
+#container1{
+    width: 800px;
+    height: 192px;
+    display: flex;
+    flex-direction: row-reverse;/* even if arranged in column, they will try to fit in until their font-size is allowing to do so. */
+    justify-content: flex-end;/*space-around/space-between/space-evenly*/
+}
+#box1{
+    background-color: #001427;
+    background-image: url("unsplash.png");
+    background-size: cover;
+}
+
+#box2{
+    background-color: #708D81;
+}
+#box3{
+    background-color: #F4D58D;
+}
+#box4{
+    background-color: #BF0603;
+}
+#box5{
+    background-color:#001427;
+}
+#container2{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    align-content: flex-start;/*saara content start me ikatha,saara space end mei*/ 
+}
+#box6{
+    background-color: #001427;
+    background-image: url("unsplash.png");
+    background-size: cover;
+}
+
+#box7{
+    background-color: #708D81;
+    height:200px;
+}
+#box8{
+    background-color: #F4D58D;
+}
+#box9{
+    background-color: #BF0603;
+}
+#box10{
+    background-color:#001427;
+}
+#container3{
+    position:absolute;
+    right: 500px;;
+    top: 400px;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*comment the following line after fully studying boxes 11-15 and see the difference*/
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* align-content: flex-start; */
+    /* align-content: align-self;  */
+}
+#box11{
+    background-color: #001427;
+    background-image: url("unsplash.png");
+    background-size: cover;
+}
+
+#box12{
+    background-color: #708D81;
+    align-self: flex-end;/*highest priority in container*/
+    height: 200px;;
+}
+#box13{
+    background-color: #F4D58D;
+}
+#box14{
+    background-color: #BF0603;
+}
+#box15{
+    background-color:#001427;
+    align-self: flex-end;
+}
+#container4{
+    position:relative;
+    top: -400px;
+    left: 800px;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: flex-start;
+    /* align-content: flex-start; */
+    /* align-content: align-self;  */
+}
+#box16{
+    background-color: #001427;
+    background-image: url("unsplash.png");
+    background-size: cover;
+}
+#box17{
+    background-color: #708D81;
+    height: 200px;
+    flex-shrink: 20;
+}
+#box18{
+    background-color: #F4D58D;
+    flex-grow: 1;
+}
+#box19{
+    background-color: #BF0603;
+    flex-shrink: 100;
+}
+#box20{
+    background-color:#001427;
+    flex-shrink:0;/* chahe kuch bhi ho jaye, shrink nahi hona hai */
+}
+#container5{
+    position: relative;
+    left: 150px;
+    bottom: 120px;
+    width: 900px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#box21{
+    background-color: #001427;
+    background-image: url("unsplash.png");
+    background-size: cover;
+}
+#box22{
+    background-color: #708D81;
+    height: 200px;
+    flex-shrink: 2;
+}
+#box23{
+    background-color: #F4D58D;
+    flex-grow: 1;/*agr grow krne ka mka mile to kar jao aur sari space le lo*/
+}
+#box24{
+    background-color: #BF0603;
+    flex-shrink: 100;
+}
+#box25{
+    background-color:#001427;
+    flex-shrink:0;
+}
+#box26{
+    background-color: cadetblue;
+    flex-grow: 2;/*box23 ke cmprisn me 2x grow karo*/
+}
+a{
+    background-color: rgba(197, 95, 23, 0.75);
+    position: relative;
+    bottom: 5px;
+}

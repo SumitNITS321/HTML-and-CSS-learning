@@ -1,0 +1,57 @@
+div{
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+}
+@media (min-width: 400px) and (max-width: 600px){
+    div{
+        background-color: rgba(245, 2, 2, 0.75);
+        height: 2em;
+        width: 2em;
+    }
+}
+@media(min-width: 600px){
+    div{
+        background-color: rgba(141, 212, 141, 0.75);
+        height: 2em;
+        width: 2em;
+    }
+}
+@media(min-width: 700px) and (max-width: 900px){
+    div{
+        background-color: rgba(206, 93, 206, 0.75);
+        height: 3em;
+        width: 3em;
+    }
+}
+@media(min-width: 901px){
+    div{
+        height: 4em;
+        width: 4em;
+        background-color: rgba(0,0,255,0.5);
+    }
+}
+@media(min-width: 400px) and (max-width: 600px){
+    body{
+        font-size: 2em;
+    }
+}
+@media(min-width: 601px) and (max-width: 999px){
+    body{
+        font-size: 3em;
+    }
+}
+@media(min-width: 1000px) and (max-width:1440px){
+    body{
+        font-size: 4em;
+    }
+}
+@media(min-width:1441px){
+    div{
+        height: 5em;
+        width: 5em;;
+    }
+    body{
+        font-size: 5em;
+    }
+}

@@ -1,0 +1,58 @@
+.division{
+    background-color: rgba(213, 44, 44, 0.5);
+    border: 2px solid black;
+    height: 96px;
+    width:96px;
+    display: inline-block;
+}
+/*by default: pehlewala(under) baadwala(over)*/
+/*z-index decides the stack level of elements(name came from z-axis)*/
+/*if position is described to be static, you can't use/change the z-index property*/ 
+#box1{
+    position: relative;
+    left: -25px;
+    top: -24px
+}
+#box2{
+    position: relative;
+    left: 60px;
+    top: 60px;
+    background-color: darkred;
+    z-index: -1;
+}
+#box3{
+    background-color: firebrick;
+    z-index: 0;
+}
+body{
+    background-image: url("image.png");
+    background-size: cover;/* cover(image completely fit and no empty space(mostly used))/contain(image completely fit and fully visible + repeated if needs to fill the space)/auto(by default(bad)) */
+}
+#box4{
+    background-image: url("unsplash.png");
+    background-size: cover;
+}
+#box5{
+    background-image: url("unsplash.png");
+    background-size: contain;
+}
+#box6{
+    background-image: url("unsplash.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box7{
+    background-image: url("nature.jpg");
+    background-size: cover;
+    height: 480px;
+    width: 300px;
+    position: fixed;
+    right: 0;
+    top: 48px;
+}
+#box8{
+    position:fixed;
+}
+p{
+    font-size: 96px;
+}

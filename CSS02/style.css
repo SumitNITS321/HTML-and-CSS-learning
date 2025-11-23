@@ -1,0 +1,74 @@
+
+*{
+    padding:0;
+    margin:0;
+    color: white;
+}
+div{
+    color: black;
+    display: inline;/*if we set the display as inline,top and bottom margins and paddings will never be created which is a drawback*/
+    display: inline-block;/*same as inline but we can get margins now*/
+}
+#a{
+    background-color: beige;
+    padding: 3px 10px 3px 10px;
+    color: black;
+}
+#b{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    padding: 25px;
+}
+#bc{
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    padding: 25px;
+    display: none;
+}
+#c{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    padding: 25px;
+}
+#d{
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    padding: 25px;
+}
+#e{
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    padding: 25px;
+    visibility: hidden;
+}
+#f{
+    background-color: rgba(255, 0, 0, 0.5);/*a=alpha means opacity*/
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    padding: 25px;
+}
+.Box{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 25px;
+}
+footer{
+    background-color: #0f1111;
+    color: white;
+    text-align: center;
+}
+main{
+    height: 580px;
+}

@@ -1,0 +1,29 @@
+/* Inline selectors have more priority than style tag */
+/* After that , CSS selector properties are applied line by line */
+h3{
+    color: chocolate;
+}
+body{
+    background-color: whitesmoke;
+}
+button{
+    background-color:red;
+    color:aliceblue;
+}
+#Headington {
+    color: blueviolet;
+}
+#Roundabout{
+    color: cadetblue;
+}
+/* Never give same id to two diff tags, considered as bad programming */
+/* If u want to apply same property to two diff tags, use class selector */
+.Chromium{
+    color: maroon;
+}
+#box{
+    background-color: violet;
+}
+#100{
+    color: green;
+}

@@ -1,0 +1,70 @@
+/* div { */
+    /* display: inline-block; */
+/* } */
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    font-size: 10px;
+}
+#box2{
+    height: 50px;
+    width: 50%;
+    background-color: antiquewhite;
+    margin-left: 25px;
+    font-size: 2em;/*2 times in parent div*/
+}
+#box3{
+    height: 200px;
+    font-size: 40px;
+    width: 5em;/*5 times the font-size*/
+    background-color: black;
+}
+#box4{
+    height:30vh;
+    width: 15rem;/*15 times the text-size of anything written in the <div>*/
+    background-color: chocolate;
+}
+#box5{
+    height:30vh;/*30% of viewport(browser) height*/
+    width:30vw;/*30% of viewport(browser) width*/
+    background-color: rgba(0, 0, 255, 0.5);
+}
+.division{
+    background-color: rgba(131, 44, 213,0.5);
+    border: 2px solid black;
+    height: 96px;
+    width:96px;
+    display: inline-block;
+}
+#box6{
+    position: static;
+}
+#box7{
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+#box8{
+    position: absolute;
+    top: 720px;
+}
+#box10{
+    position: fixed;
+    bottom: 0px;
+    height:10px;
+    background-color: rgb(1, 1, 128) ;
+    width: 100vw;
+}
+#box11{
+    position: sticky;
+    top: 0px;
+}
+#box12{
+    position: fixed;
+    top:0px;
+    height: 20px;
+    width:100vw;
+    background-color: darkolivegreen;
+}
